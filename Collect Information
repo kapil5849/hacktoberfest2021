@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Information form></form></title>
+    <style>
+        *{
+            box-sizing:border-box;
+        }
+        body{
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            margin: 2px 550px;
+            font-size: 16px;
+            font-style: inherit;
+            font-language-override: initial;
+            font: 1em sans-serif;
+            font-weight: 100%;
+
+            padding: 3px;
+        }
+        .container{
+            background-color: #a6c96f;
+            padding: 1px 2px 5px 7px;
+            border: 1px solid black;
+            border-radius: 6px;
+        }
+        input[type="text"],
+        input[type="date"],
+        input[type="Email"],
+        input[type="Contect"],
+        select,
+        textarea
+         {
+            width: 100%;
+            background-color: rgb(245, 248, 246);
+            border: rgb(212, 197, 197);
+            border-radius: 0.2px;
+            margin: 0.1px;
+        }
+        main_heading{
+            text-align:right;
+            background : black;
+            text-shadow: black;
+            text-overflow: ellipsis;
+            text-decoration: underline;
+            font-size: initial;
+            font-weight: 500;
+            font-style: inherit;
+        }
+        input[type="submit"] {
+            background-color: yellowgreen;
+            padding: 20px;
+            padding: radius 4px;
+            color: white;
+            cursor: zoom-in;
+            width: 100%;          
+        }
+        input[type="submit"]:hover{
+            background-color: rgba(155, 230, 6, 0.315);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="">
+          <h1 class="main_heading">CONTECT~FORM</h1>
+          <p>
+            Name: *
+            <input type="text" required name="name" placeholder="Please enter full name">
+          </p>
+          <p>
+            B'day-date: *
+            <input type="date" name="B'day-date" id="B'day-date">
+          </p>
+          <p>Email: *
+            <input type="text" required name="Email" placeholder="enter your best mail">
+          </p>
+          <p>Contect: *
+            <input type="text" required name="Contect number" placeholder="your best moblie number">
+          </p>
+          <p>Do you have any skill?</p>
+          <p>skill type: *
+            <select name="skill_type" id="skill_type">
+              <option value="">--skill--</option>
+              <option value="reading">reading</option>
+              <option value="teaching/traing">teaching/traing</option>
+              <option value="trading">trading</option>
+              <option value="coding">coding</option>
+              <option value="editing">editingg</option>
+              <option value="playing">playing</option>
+              <option value="other">other</option>
+            </select>
+          </p>
+          <p>Do you have any tool's?</p>
+      
+          <input type="checkbox" name="gezet-1" value="laptop">
+          <label for="gezet-1"> I have a laptop</label><br>
+          <input type="checkbox" name="gezet-2" value="mobile">
+          <label for="gezet-2"> I have a mobile</label><br>
+          <input type="checkbox" name="gezet-3" value="Car" checked>
+          <label for="gezet-3"> I have a Car</label><br>
+          <input type="checkbox" name="gezet-4" value="Bike">
+          <label for="gezet-4"> I have a Bike</label><br>
+          <p>Write about your goal:</p>
+          <p> Goal: *<textarea name="Goal" id="Goal" cols="15" rows="4"></textarea></p>
+          <input type="submit" value="Continue">
+          <p>you have must filled *</p>
+        </form>
+</body>
+</html>
